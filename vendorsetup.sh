@@ -15,4 +15,5 @@
 #
 
 add_lunch_combo aosp_d5103-userdebug
+add_lunch_combo cm_seagull-userdebug
 

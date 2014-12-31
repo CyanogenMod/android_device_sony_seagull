@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Resolution
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony
 TARGET_KERNEL_CONFIG := aosp_yukon_seagull_defconfig
@@ -24,6 +28,9 @@ TARGET_RECOVERY_FSTAB := device/sony/seagull/rootdir/fstab.yukon
 
 # Inherit from seagull device
 $(call inherit-product, device/sony/seagull/aosp_d5103.mk)
+
+# Inherit from common resources
+$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit CM common stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)

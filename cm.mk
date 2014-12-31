@@ -21,8 +21,6 @@ TARGET_OTA_ASSERT_DEVICE := D5103,seagull
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/seagull/rootdir/fstab.yukon
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-BOARD_RECOVERY_SWIPE := true
 
 # Inherit from seagull device
 $(call inherit-product, device/sony/seagull/aosp_d5103.mk)

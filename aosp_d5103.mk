@@ -31,8 +31,10 @@ PRODUCT_NAME := aosp_d5103
 PRODUCT_DEVICE := seagull
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia T3 (AOSP)
-PRODUCT_LOCALES += xhdpi hdpi
 PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=280

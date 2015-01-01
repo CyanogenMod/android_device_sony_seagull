@@ -23,9 +23,6 @@ TARGET_KERNEL_CONFIG := aosp_yukon_seagull_defconfig
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5103,seagull
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/sony/seagull/rootdir/fstab.yukon
-
 # Inherit from seagull device
 $(call inherit-product, device/sony/seagull/aosp_d5103.mk)
 

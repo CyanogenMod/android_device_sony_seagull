@@ -29,6 +29,9 @@ PRODUCT_COPY_FILES += \
     device/sony/seagull/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc \
     device/sony/seagull/rootdir/fstab.yukon:root/fstab.yukon
 
+PRODUCT_PACKAGES += \
+    keystore.msm8226
+
 PRODUCT_NAME := aosp_d5103
 PRODUCT_DEVICE := seagull
 PRODUCT_BRAND := Sony

@@ -19,6 +19,9 @@ $(call inherit-product, vendor/sony/seagull/seagull-vendor.mk)
 $(call inherit-product, vendor/sony/msm8226-common/msm8226-common-vendor.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/seagull/overlay
+
 PRODUCT_COPY_FILES += \
     device/sony/seagull/rootdir/system/usr/idc/cyttsp4_mt.idc:system/usr/idc/cyttsp4_mt.idc \
     device/sony/seagull/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
